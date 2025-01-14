@@ -24,7 +24,7 @@ public class Sequence
 
             //1 true, 0 false
             int isSuccess = await stream.ReadAsync(buffer, 0, buffer.Length);
-            if (isSuccess == 0)
+            if (buffer[0] == 0)
             {
                 Console.WriteLine("로그인 실패 동일한 이름이 있습니다.");
                 continue;
