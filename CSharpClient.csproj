@@ -9,9 +9,15 @@
 
   <ItemGroup>
     <PackageReference Include="Google.Protobuf" Version="3.29.3" />
+    <PackageReference Include="grpc" Version="2.46.6" />
+    <PackageReference Include="Grpc.Net.Client" Version="2.67.0" />
     <PackageReference Include="MessagePack" Version="3.1.1" />
     <PackageReference Include="protobuf-net" Version="3.2.45" />
     <PackageReference Include="System.Net.WebSockets" Version="4.3.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Protocol\" />
   </ItemGroup>
 
 </Project>
