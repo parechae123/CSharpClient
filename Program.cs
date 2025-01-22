@@ -11,12 +11,15 @@ class Program
         try
         {
             var server = new ChannelClient();
-            server.Start();
+            //server.Start();
+            var temp = server.Start();
         } 
         catch(Exception ex)
         { 
             Console.WriteLine(ex.ToString());
         }
+
+        Console.ReadLine();
     }
 
 /*    static async Task Main()
